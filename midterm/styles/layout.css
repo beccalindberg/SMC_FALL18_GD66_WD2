@@ -11,15 +11,17 @@ header {
 main {
     margin-top: 500px;
     background-color: white;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
     float: right;
-    padding-top: 2px;
+    padding-top: 30px;
 }
 
 .logo {
-    padding-top: 2px;
+    margin-left: 35px;
     float:left;
-    width: 450px;
 }
