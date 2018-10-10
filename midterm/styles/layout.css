@@ -4,21 +4,22 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: transparent;
     height: 70px;
 }
 
 main {
+    margin-top: 500px;
     background-color: white;
 }
 
 nav {
-    padding-top:2px;
+    float: right;
+    padding-top: 2px;
 }
 
 .logo {
     padding-top: 2px;
     float:left;
-    width: 500px;
-    opacity: 50%;
+    width: 450px;
 }
