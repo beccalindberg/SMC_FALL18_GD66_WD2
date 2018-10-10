@@ -1,0 +1,19 @@
+/* adding all things for font and text */
+@import url("typography.css");
+
+/*adding all things for page layout */
+@import url("layout.css");
+
+/* list styles */
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px 10px 20px;
+}

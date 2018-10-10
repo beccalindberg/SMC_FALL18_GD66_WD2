@@ -1,0 +1,24 @@
+body {
+    background-color: lightblue;
+    background-image: url("../images/photo-1534190760961-74e8c1c5c3da.jpg")
+}
+
+header {
+    background-color: white;
+    height: 70px;
+}
+
+main {
+    background-color: white;
+}
+
+nav {
+    padding-top:2px;
+}
+
+.logo {
+    padding-top: 2px;
+    float:left;
+    width: 500px;
+    opacity: 50%;
+}
