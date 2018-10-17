@@ -1,6 +1,10 @@
 body {
     background-color: lightblue;
-    background-image: url("../images/photo-1534190760961-74e8c1c5c3da.jpg")
+    background-image: url("../images/photo-1534190760961-74e8c1c5c3da.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
@@ -9,19 +13,43 @@ header {
 }
 
 main {
-    margin-top: 500px;
+    margin-top: 800px;
+    margin-bottom: 50px;
     background-color: white;
+    opacity: 0.8;
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-}
-
+    height: auto;
+    padding: 15px;
+    padding-bottom: 50px;
+    }
+    
+.navbar {
+    position: fixed;
+    width: 100%;
+    }
+    
 nav {
     float: right;
     padding-top: 30px;
-}
-
+    }
+    
 .logo {
     margin-left: 35px;
     float:left;
+    }
+
+.objectgrid {
+    width: inherit;
+    max-width: 100% 850px;
+}
+
+#object {
+    display: inline-block;
+    width: 283px;
+    height: 283px;
+    margin-left: 8px;
+    margin-right: 5px;
+    background-color: pink;
 }

@@ -11,7 +11,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 100;
-    text-decoration: overline;
+    border-top: 1.5px solid black;
     opacity: 0.6;
 }
 
