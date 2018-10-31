@@ -26,33 +26,33 @@
         var docHeader = document.getElementById("docHeader");
         var docParagraph = document.getElementById("docParagraph");
 
-        var changeMyText = function(){
+        function changeMyText(){
             // this is my header text //
             var myText = "Goodbye, Sky!";
             docHeader.innerHTML = myText;
         }
 
-        var changeMyTextAgain = function(){
+        function changeMyTextAgain(){
             // this is my header text //
             var myText = "Say WHUUUUT?!";
             docHeader.innerHTML = myText;
         }
 
-        var hideMyText = function(){
+        function hideMyText(){
             // this is my header text //
             var myText = "Hello, World!";
-            document.getElementById('docHeader').style.display = 'none';
+            docHeader.style.visibility = 'hidden';
             docHeader.innerHTML = myText;
         }
 
-        var showMyText = function(){
+        function showMyText(){
             // this is my header text //
             var myText = "Hello, World!";
-            document.getElementById('docHeader').style.display = 'block';
+            docHeader.style.visibility = 'visible';
             docHeader.innerHTML = myText;
         }
 
-        var changeMyColor = function(){
+        function changeMyColor(){
             // this is a numberic value for my header color
             var red = Math.random()*255;
             var green = Math.random()*255;
@@ -62,10 +62,10 @@
             docHeader.style.color = RGBval;
         }
 
-        var addMyParagraph = function(){
+        function addMyParagraph(){
             // this is my paragraph text //
             var myParagraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus tincidunt ex at semper. Proin tempus bibendum felis, ac fermentum massa pellentesque quis. Phasellus a accumsan magna, vel vehicula nisl. Aliquam sagittis libero sit amet justo accumsan maximus. Proin vitae ligula at turpis accumsan euismod. Fusce dignissim nec quam aliquet aliquet. Vestibulum sit amet tincidunt enim. Fusce lobortis ante est, tempor ullamcorper augue convallis quis. Fusce vel sapien lectus. Quisque accumsan consectetur nulla, vel iaculis libero fringilla quis.";
-            document.getElementById('docParagraph').style.display = 'block';
+            docParagraph.style.display = 'block';
             docParagraph.innerHTML = myParagraph;
 
             docParagraph.style.fontSize = "14px";
@@ -74,16 +74,26 @@
             docParagraph.style.width = "400px";
         }
 
-        var addBackgroundColor = function(){
+        function addBackgroundColor(){
             // this is my background color //
             document.body.style.backgroundColor = "#cfcfcf";
         }
 
-        var addPicture = function(){
+        function addPicture(){
             // this is my surprise picture //
-            var x = document.createElement("IMG");
-            x.setAttribute("src", "images/pitbull.jpg")
-            document.body.appendChild(x);
+            var existingImage = document.getElementById("Pitbull");
+
+            console.log(existingImage);
+            if(existingImage == null){
+                var surpriseImage = document.createElement("IMG");
+                surpriseImage.setAttribute("src", "images/pitbull.jpg");
+                surpriseImage.setAttribute("id", "Pitbull");
+                document.body.appendChild(surpriseImage);
+            }
+
+            else {
+                existingImage.setAttribute("src", "images/cookie_pitbull.jpg");
+            }
         }
 
         
