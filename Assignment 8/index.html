@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="changeMyText()">Change Text</button>
+        <button onclick="changeMyTextAgain()">Change Text Again</button>
+        <button onclick="hideMyText()">Hide Header Text</button>
+        <button onclick="showMyText()">Show OG Header Text</button>
+        <button onclick="changeMyColor()">Change Color</button>
+        <button onclick="addMyParagraph()">Want A Paragraph?</button>
+        <button onclick="addBackgroundColor()">Let's Add a BG Color!</button>
+        <button onclick="addPicture()">Surprise?</button>
+    </div>
+
+    <h1 id="docHeader">Hello, World!</h1>
+    <p id="docParagraph"></p>
+    <img id="myPicture">
+    <script>
+        var docHeader = document.getElementById("docHeader");
+        var docParagraph = document.getElementById("docParagraph");
+
+        var changeMyText = function(){
+            // this is my header text //
+            var myText = "Goodbye, Sky!";
+            docHeader.innerHTML = myText;
+        }
+
+        var changeMyTextAgain = function(){
+            // this is my header text //
+            var myText = "Say WHUUUUT?!";
+            docHeader.innerHTML = myText;
+        }
+
+        var hideMyText = function(){
+            // this is my header text //
+            var myText = "Hello, World!";
+            document.getElementById('docHeader').style.display = 'none';
+            docHeader.innerHTML = myText;
+        }
+
+        var showMyText = function(){
+            // this is my header text //
+            var myText = "Hello, World!";
+            document.getElementById('docHeader').style.display = 'block';
+            docHeader.innerHTML = myText;
+        }
+
+        var changeMyColor = function(){
+            // this is a numberic value for my header color
+            var red = Math.random()*255;
+            var green = Math.random()*255;
+            var blue = Math.random()*255;
+
+            var RGBval = "rgb(" + red + ", " + green + ", " + blue +")";
+            docHeader.style.color = RGBval;
+        }
+
+        var addMyParagraph = function(){
+            // this is my paragraph text //
+            var myParagraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus tincidunt ex at semper. Proin tempus bibendum felis, ac fermentum massa pellentesque quis. Phasellus a accumsan magna, vel vehicula nisl. Aliquam sagittis libero sit amet justo accumsan maximus. Proin vitae ligula at turpis accumsan euismod. Fusce dignissim nec quam aliquet aliquet. Vestibulum sit amet tincidunt enim. Fusce lobortis ante est, tempor ullamcorper augue convallis quis. Fusce vel sapien lectus. Quisque accumsan consectetur nulla, vel iaculis libero fringilla quis.";
+            document.getElementById('docParagraph').style.display = 'block';
+            docParagraph.innerHTML = myParagraph;
+
+            docParagraph.style.fontSize = "14px";
+            docParagraph.style.fontFamily = "Arial";
+            docParagraph.style.textAlign = 'justify';
+            docParagraph.style.width = "400px";
+        }
+
+        var addBackgroundColor = function(){
+            // this is my background color //
+            document.body.style.backgroundColor = "#cfcfcf";
+        }
+
+        var addPicture = function(){
+            // this is my surprise picture //
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "images/pitbull.jpg")
+            document.body.appendChild(x);
+        }
+
+        
+        // this is a numberic value for my header size
+        // var myTextSize = Math.random()*100;
+        // console.log(docHeader);
+        // docHeader.style.fontSize = myTextSize + "px";
+
+    </script>
+</body>
+</html>
