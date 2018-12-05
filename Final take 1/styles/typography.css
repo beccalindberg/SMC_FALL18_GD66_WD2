@@ -1,0 +1,42 @@
+/* header styles */
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px #333;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    border-top: 1.5px solid black;
+    opacity: 0.6;
+}
+
+/* anchors and links */
+a {
+    color: white;
+    font-family: 'Open Sans Condensed';
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+a:hover {
+    border-top: 1px solid #fd7d26;
+    color:white;
+}
+
+/* paragraphs */
+
+p {
+    font-family: 'Montserrat', 'Calibri', sans-serif;
+    font-size: 13px;
+    text-align: justify;
+}
