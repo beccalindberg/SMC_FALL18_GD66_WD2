@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: white;
     background-image: url("../images/RR_background2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,8 +13,8 @@ header {
 }
 
 main {
-    margin-top: 1000px;
-    margin-bottom: 50px;
+    margin-top: 450px;
+    margin-bottom: 30px;
     background-color: transparent;
     width: 900px;
     margin-left: auto;
@@ -29,14 +29,12 @@ article {
 }
     
 .navbar {
-    position: fixed;
     width: 100%;
+    text-align: center;
     }
     
 nav {
-    float: left;
     padding-top: 20px;
-    padding-left: 25px;
     }
     
 .logo {
@@ -48,16 +46,16 @@ nav {
 /* list styles */
 ul {
     list-style-type: none;
-    padding-left: 0px;
+    display: inline-block;
     }
 
 li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-left: 5px;
     background: rgba(0, 0, 0, 0.3);
     padding: 10px 25px 10px 25px;
-    width: 50px;
+    width: 70px;
     text-align: center;
     }
 
