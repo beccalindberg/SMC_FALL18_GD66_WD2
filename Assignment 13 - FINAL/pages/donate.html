@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reversed Rescue | DONATE</title>
+        <link rel="icon" href="../images/RR_icon.jpg">
+        <link rel="stylesheet" href="../styles/stylesheet.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img class ="logo" src="../images/RR_logo_transparent.png" alt="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="../pages/adoptables.html">Adopt</a></li>
+                        <li><a href="../pages/blog.html">Blog</a></li>
+                        <li><a href="../pages/donate.html">Donate</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <main>
+        <h1>Donate</h1>
+        <article>
+            <h2>Donate</h2>
+            <p><b>We at Reversed Rescue want to be the upcoming non profit rescue in LA to get California one step closer to being No Kill territory and make a change for the breed so misunderstood - will you join us?</b></p>
+
+            <p>At Reversed Rescue we work every day to save pitbulls' lives, and we could not do it without your generosity and donations. Each contribution to Reversed Rescue means aid for homeless, neglected and abused pitbulls all over California and sometimes beyond CA as we grow. Your continued support truly makes a huge difference. Please help us continue to impact the lives of pitbuls across the country and change the stereotype that has been set in on this misunderstood breed.</p>
+
+            <p>The work of Reversed Rescue is funded entirely by public donations as a 501(c)3. Your support is vital to making a lasting difference to our rescued pitbulls' lives and operations we run. Your gift today - whatever sum you can give - will help us save animals from suffering and give them the expert treatment and care they need. Our only goal is to save as many pitbulls day to day and give the best training possible to make sure people can make a PAWsitive difference in the lives of their pits while spreading knowledge to those who are unaware of the cruelty surrounding pitbulls everyday in our nation.</p>
+
+            <div class="form-container">
+                    <h3>Every penny makes a difference!</h3>
+            
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstname" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastname" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="emailaddress" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="messageText">Message</label>
+                            <textarea></textarea>
+                        </div>
+
+                        <fieldset id="radio-group">
+                                <input type="radio" name="status" value="yes" class="form-radio">$20<br/>
+                                <input type="radio" name="status" value="yes" class="form-radio">$50<br/>
+                                <input type="radio" name="status" value="yes" class="form-radio">$100<br/>
+                            </fieldset>
+
+
+                        <!-- <input type="submit" value="Submit" disabled> -->
+                        
+                    </form>
+                    <button id="submitForm">Submit</button>
+                </div>
+            
+                <script>
+                    $(document).ready(function(){
+                        $('input, textarea').blur(function(){
+                            
+                            $('.form-group input, .form-group textarea').each(function(){
+                                if($(this).val() != ''){
+                                    $('#submitForm').removeAttr('disabled');
+                                }
+                                else {
+                                    $('#submitForm').attr('disabled', 'disabled');
+                                }
+                            });
+                        });
+                        $('#submitForm').click(function(){
+                            $('form').before('<div class="alert alert-success"><h2>Thank you for your message! </h2></div>');
+                            $('form').remove();
+                        });
+                        
+                    });
+                </script>
+        </article>
+    </main>
+    </body>
+</html>
